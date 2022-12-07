@@ -62,8 +62,9 @@ int main() {
                 imprimirGrafo(adj, V, L);
             break;
                 
-            case 2;
+            case 2:
                 cout<<"Saliendo"<<endl;
             break;
+        }
     }while(op != 2);
 }
