@@ -8,6 +8,8 @@
 using namespace std;
 
 int main(int argc, const char * argv[]) {
+    cout<<"Unidad 3, Programa 2"<<endl;
+    cout<<"Caracterizacion de bipartitos matriz reducida"<<endl;
     int L,R,i,j,op;
     cout<<"Representacion de un grafo bipartito como una matriz donde"<<endl;
     cout<<"Las filas son el subconjunto de nodos L y las columnas el subconjunto de nodos R"<<endl;
