@@ -21,6 +21,8 @@ int G[V][V] = {
 
 int main() {
     
+    cout<<"Unidad 2, programa No.5"<<endl;
+    cout<<"Arbol de expancion Prim"<<endl;
     //int** MatrizAdy = NULL, CantNodos, op;
     //string Ni, Nf;
     vector<string> NombreNodos;
@@ -72,5 +74,6 @@ int main() {
     }
     cout<<"El peso total del recorrido fue: "<<pesoTotal<<endl;
 
+    system("pause");
     return 0;
 }

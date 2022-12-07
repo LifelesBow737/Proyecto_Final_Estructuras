@@ -100,6 +100,9 @@ int Graph::kruskalMST()
   
 int main()
 {
+    cout<<"Unidad 2, programa No.4"<<endl;
+    cout<<"Arbol de expancion Kruskal"<<endl;
+
     int V = 9, E = 14;
     Graph g(V, E);
   
@@ -123,6 +126,7 @@ int main()
     int mst_wt = g.kruskalMST();
   
     cout << "\nWeight of MST is " << mst_wt;
-  
+    
+    system("pause");
     return 0;
 }

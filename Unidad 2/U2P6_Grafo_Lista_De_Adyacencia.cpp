@@ -1,6 +1,6 @@
 /*
 Fecha: 17/09/2022
-Hecho por: Diego López Mendoza
+Hecho por: Diego Lï¿½pez Mendoza
 Objetivo: Almacenar un grafo en una lista de adyacencia.
 */
 #include<iostream>
@@ -32,7 +32,11 @@ void mostrar_aristas();
 /*                        Funcion Principal
 ---------------------------------------------------------------------*/
 int main(void)
-{   p=NULL;
+{   
+    cout<<"Unidad 2, programa No.6"<<endl;
+    cout<<"Grafo lista de adyacencia"<<endl;
+
+    p=NULL;
     int op;     // opcion del menu
     system("color 0b");
     do
@@ -60,6 +64,8 @@ int main(void)
 
     }while(op!=5);
     getch();
+
+    system("pause");
     return 0;
 }
 

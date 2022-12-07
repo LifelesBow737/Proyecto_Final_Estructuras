@@ -12,12 +12,10 @@ struct Nodo
     Nodo *siguiente;
 };
 
-Nodo *frente = NULL;
-Nodo *final = NULL;
+Nodo *pila = NULL;
 
-void menu();
-void insertarNodo(Nodo *&, Nodo *&, int);
-void eliminarNodo(Nodo *&, Nodo *&, int &);
+void insertarDato(Nodo *&, int);
+void sacarNodo(Nodo *&, int &);
 
 bool todosVisitados(bool v[], int n){
     for (int x = 0; x < n; x++){
@@ -29,6 +27,10 @@ bool todosVisitados(bool v[], int n){
 }
 
 int main(){
+
+    cout<<"Unidad 2, programa No.2"<<endl;
+    cout<<"Recorrido en profundidad"<<endl;
+
     int dato;
     
     srand(time(NULL));
@@ -60,18 +62,18 @@ int main(){
         for (int x = 0; x < n; x++){
             if ((ady[inicio][x] == 1) && (visitado[x] == false)){
                 visitado[x] = true;
-                insertarNodo(frente, final, x);
+                insertarDato(pila, x);
             }
         }
 
-        if(frente != NULL){
-            inicio = frente->dato;
-            cout << " -> " << frente->dato;
+        if(pila != NULL){
+            inicio = pila->dato;
+            cout << " -> " << pila->dato;
             //system( "read -n 1 -s -p \"Press any key to continue...\"" );
-            eliminarNodo(frente, final, dato);
+            sacarNodo(pila, dato);
         }
 
-    } while(!todosVisitados(visitado, n) || frente != NULL);
+    } while(!todosVisitados(visitado, n) || pila != NULL);
 
     cout << "\n";
     // Mostramos la matriz de adyacencia.
@@ -81,51 +83,29 @@ int main(){
         }
         cout << endl;
     }
+    system("pause");
 }
 
-void insertarNodo(Nodo *&frente, Nodo *&final, int n)
+void insertarDato(Nodo *&pila, int n)
 {
     Nodo *nuevo_nodo = new Nodo();
     nuevo_nodo->dato = n;
-    
-    if(frente == NULL)
-    {
-        frente = nuevo_nodo;
-        final = nuevo_nodo;
-    }
-    else
-    {
-        final->siguiente = nuevo_nodo;
-        final = nuevo_nodo;
-    }
+    nuevo_nodo->siguiente = pila;
+    pila = nuevo_nodo;
 }
 
-void eliminarNodo(Nodo *&frente, Nodo *&final, int &n)
+void sacarNodo(Nodo *&pila, int &n)
 {
-    Nodo *aux_borrar;
-    
-    if(frente != NULL)
+    if(pila != NULL)
     {
-        if(frente == final)
-        {
-            aux_borrar = frente;
-            n = aux_borrar->dato;
-            frente = frente->siguiente;
-            frente = NULL;
-            final = NULL;
-        
-            delete aux_borrar;
-        }
-        else
-        {
-            aux_borrar = frente;
-            n = aux_borrar->dato;
-            frente = frente->siguiente;
-        
-            delete aux_borrar;
-        }
+        Nodo *aux = pila;
+        n = aux->dato;
+        pila = aux->siguiente;
+        delete aux;
+      
     }
     else
     {
+      
     }
 }

@@ -43,8 +43,13 @@ bool isTree() {
 }
 
 int main() {
+
+   cout<<"Unidad 2, programa No.3"<<endl;
+   cout<<"Probar que es un arbol"<<endl;
+
    if(isTree() == true)
       cout << "El grafo es un arbol."<<endl;
    else
       cout << "El grafo no es un arbol."<<endl;
+      system("pause");
 }

@@ -4,6 +4,8 @@ using namespace std;
 
 
 int main(){
+	cout<<"Unidad 1, Programa 5"<<endl;
+	cout<<"Conjunto potencia por manipulacion de bits"<<endl;
 	unsigned int elemen;
 	cout<< "Digite la cantidad de elementos que tendra el arreglo: ";
 	cin>>elemen;
@@ -23,6 +25,7 @@ int main(){
 				cout<< 0;
 		}
 		cout<< endl;
+		
 	}
 	
 	cout<<"\n\n\tCONJUNTO POTENCIA: \n"<<endl;
