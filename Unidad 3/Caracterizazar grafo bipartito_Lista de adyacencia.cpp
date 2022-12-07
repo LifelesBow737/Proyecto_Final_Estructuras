@@ -21,6 +21,8 @@ void imprimirGrafo(vector<int> adj[], int V, int L) {
 }
 
 int main() {
+    cout<<"Unidad 3, Programa 3"<<endl;
+    cout<<"Caracterizacion de bipartitos lista de adyacencia"<<endl;
     int L, R, op, in, fin;
     
     cout<<"Ingresa la cantidad de nodos del conjunto L: ";

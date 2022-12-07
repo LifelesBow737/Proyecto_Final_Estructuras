@@ -4,6 +4,8 @@
 using namespace std;
 
 int main(){
+    cout<<"Unidad 3, Programa 4"<<endl;
+    cout<<"Pareo a lo tonto de grafo bipartito"<<endl;
     int i=0,j=0,r,l;
     cout<<endl<<"ingrese la canditidad de nodos del subconjunto L: ";
     cin>>l;

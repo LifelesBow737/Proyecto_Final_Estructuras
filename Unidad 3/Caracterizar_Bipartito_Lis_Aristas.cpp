@@ -66,6 +66,8 @@ void display_AdjList(adjNode* ptr, int i)
 // implementacion del grafo
 int main()
 {
+    cout<<"Unidad 3, Programa 1"<<endl;
+    cout<<"Caracterizacion de bipartitos lista de aristas"<<endl;
     int L,R,i,j,op,cont;
     cout<<"Representacion de un grafo bipartido como una lista de aristas con sus pesos respectivos"<<endl<<endl;
     cout<<"Las filas son el subconjunto de nodos L y las columnas el subconjunto de nodos R"<<endl;
