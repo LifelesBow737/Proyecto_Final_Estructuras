@@ -15,7 +15,8 @@ void Obtener_Combinaciones(int [], int , int ,int , int [], int );
 void Imprime_Combinacion(int [], int , int );
 
 int main(){
-	
+	cout<<"Unidad 1, Programa 1"<<endl;
+	cout<<"Algoritmos para generar todas las permutaciones y combinaciones de n elementos"<<endl;
 	//Declaraci�n de las variables
 	int Num_Elementos=0,Num_Elegidos=0,Numero_x=0,Permutacion=0,Combinacion=0,Size=0;
 	int a[]={1,2,3,4,5,6,7,8,9};
@@ -37,7 +38,6 @@ int main(){
 	Permutacion_Heap(a,Num_Elementos,Num_Elegidos);
 	cout<<"Numero de combinaciones: "<<Combinacion<<endl<<"Tabla de combinaciones:"<<endl;
 	Imprime_Combinacion(a,Num_Elementos,Num_Elegidos);
-
 	
 	system("pause");
 	return 0;
