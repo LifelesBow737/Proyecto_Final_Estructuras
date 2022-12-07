@@ -10,7 +10,8 @@ int p;
 
 int main()
 {
-    
+    cout<<"Unidad 1, Programa 4"<<endl;
+    cout<<"Conjunto potencia y cadena de bits"<<endl;
     int i,j,n;
     string temp;
     
