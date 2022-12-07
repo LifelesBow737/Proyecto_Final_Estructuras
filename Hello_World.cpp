@@ -1,4 +1,4 @@
-/*Hola humanos*/
+/*Nah, no tengo ganas, humanos*/
 #include<iostream>
 using namespace std;
 int main(int argc, char const *argv[])
