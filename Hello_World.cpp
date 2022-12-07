@@ -2,7 +2,7 @@
 using namespace std;
 int main(int argc, char const *argv[])
 {
-    /* code */
+    
     cout<<"Programa: Hello world"<<endl;
     
     cout<<"Hola"<<endl;
