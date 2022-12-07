@@ -1,4 +1,4 @@
-/*Nah, tengo ganado de humanos jsjsjsjs, asdasdjoasjdsajd*/
+/*Nah, tengo ganado de humanos jsjsjsjs, asdasdjoasjdsaj*/
 #include<iostream>
 using namespace std;
 int main(int argc, char const *argv[])
