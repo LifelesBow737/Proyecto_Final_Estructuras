@@ -1,4 +1,6 @@
-/*Nah, no tengo ganas, humanos*/
+
+/*Nah, tengo ganado de humanos jsjsjsjs, asdasdjoasj*/
+
 #include<iostream>
 using namespace std;
 int main(int argc, char const *argv[])
@@ -15,4 +17,5 @@ int main(int argc, char const *argv[])
 
     system("pause");
     return 0;
+    /*EUREKA*/
 }
