@@ -1,9 +1,14 @@
 #include<iostream>
 using namespace std;
+
 int main(){
-	int n=0,i=0,j=0;
-	cout<<"Ingrese el numero de vertices del grafo: ";cin>>n;
-	int matriz[n][n];
+
+	cout<<"Unidad 2, programa No.7"<<endl;
+    cout<<"Grafo Matriz de adyacencia"<<endl;
+
+	int n=5,i=0,j=0;
+	//cout<<"Ingrese el numero de vertices del grafo: ";cin>>n;
+	int matriz[5][5];
 	cout<<"(Si existe conexion presiones 1, si no la hay, presione 0)"<<endl<<endl;
 	for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
